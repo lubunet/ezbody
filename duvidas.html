@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entenda como funciona o full body tracking ezbodyvr, seus kits, sensor LSM6DSV, bateria, dongle e configuração.">
+  <meta name="theme-color" content="#050914">
+  <title>Dúvidas | ezbodyvr</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="intro" aria-hidden="true">
+    <div class="intro-logo">ezbodyvr<span>central de dúvidas</span></div>
+  </div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <div class="mobile-overlay" data-mobile-overlay></div>
+  <aside class="mobile-menu" data-mobile-menu aria-label="Menu para celular">
+    <div class="mobile-menu-top">
+      <a class="brand" href="index.html">ezbodyvr</a>
+      <button class="mobile-close" data-menu-close aria-label="Fechar menu">×</button>
+    </div>
+    <nav class="mobile-links">
+      <a href="index.html">Início</a>
+      <a href="#entenda">Como funciona</a>
+      <a href="#kits">Kits</a>
+      <a href="#instalacao">Instalação</a>
+      <a href="#faq">Perguntas frequentes</a>
+    </nav>
+  </aside>
+
+  <header class="site-header">
+    <div class="navbar">
+      <button class="menu-button" data-menu-open aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <a class="brand" href="index.html">ezbodyvr</a>
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="#entenda">Como funciona</a>
+        <a href="#kits">Kits</a>
+        <a href="#instalacao">Instalação</a>
+        <a class="nav-cta active" href="#faq">Dúvidas</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-hero">
+    <div class="page-hero-inner reveal">
+      <span class="eyebrow">entenda antes de usar</span>
+      <h1>Full body sem <span class="gradient-text">complicação.</span></h1>
+      <p>Aqui você encontra uma explicação direta sobre o que o ezbodyvr faz, como os trackers leem seu movimento e o que muda entre os kits de 6, 8 e 10 pontos.</p>
+      <nav class="quick-nav" aria-label="Atalhos da central de dúvidas">
+        <a href="#entenda">Funcionamento</a>
+        <a href="#sensor">Sensor</a>
+        <a href="#kits">Kits</a>
+        <a href="#instalacao">Instalação</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </main>
+
+  <section class="section" id="entenda">
+    <div class="section-heading center reveal">
+      <span class="kicker">o conceito</span>
+      <h2>O que é full body tracking?</h2>
+      <p>É um sistema que adiciona pontos de rastreamento ao corpo. Esses pontos ajudam o avatar a reproduzir movimentos de pernas, quadril, peito e outras regiões que normalmente não são acompanhadas apenas pelo headset e pelos controles.</p>
+    </div>
+
+    <div class="explain-layout">
+      <article class="explain-card reveal">
+        <span class="kicker">caminho do movimento</span>
+        <h2>Como o sinal chega ao avatar</h2>
+        <p>Cada tracker mede sua orientação. O conjunto envia os dados ao computador e o software usa essas informações para estimar a posição das partes do corpo.</p>
+        <div class="signal-flow">
+          <div class="signal-node" data-step="1"><strong>Seu corpo se movimenta</strong><span>Os trackers acompanham inclinação, rotação e aceleração.</span></div>
+          <div class="signal-node" data-step="2"><strong>O dongle recebe os dados</strong><span>A comunicação acontece em 2.4 GHz por um receptor dedicado.</span></div>
+          <div class="signal-node" data-step="3"><strong>O SlimeVR Server processa</strong><span>O computador organiza os trackers e calcula o esqueleto virtual.</span></div>
+          <div class="signal-node" data-step="4"><strong>O avatar acompanha você</strong><span>O movimento é disponibilizado ao ambiente PC VR compatível.</span></div>
+        </div>
+      </article>
+
+      <article class="explain-card reveal" id="sensor">
+        <span class="kicker">lsm6dsv</span>
+        <h2>O sensor dentro de cada tracker</h2>
+        <p>O LSM6DSV é uma IMU digital de 6 eixos. Ele reúne um acelerômetro de 3 eixos e um giroscópio de 3 eixos em um componente compacto e de baixo consumo.</p>
+        <div class="signal-flow">
+          <div class="signal-node" data-step="A"><strong>Acelerômetro</strong><span>Percebe aceleração, inclinação e mudanças no movimento.</span></div>
+          <div class="signal-node" data-step="G"><strong>Giroscópio</strong><span>Mede rotação e velocidade angular em três direções.</span></div>
+          <div class="signal-node" data-step="F"><strong>Filtragem e processamento</strong><span>Os dados passam pelo sistema do tracker antes de serem enviados ao PC.</span></div>
+        </div>
+        <div class="notice">O sensor não funciona sozinho: ele é a parte que mede o movimento. A placa nRF52840 é responsável pelo processamento principal e pela comunicação sem fio.</div>
+      </article>
+    </div>
+  </section>
+
+  <section class="tech-section" id="kits">
+    <div class="tech-layout">
+      <article class="tech-intro reveal">
+        <span class="kicker">qual kit escolher?</span>
+        <h2>A quantidade muda o número de pontos acompanhados.</h2>
+        <p>O kit de 6 trackers cobre a base mais comum do full body. Os kits de 8 e 10 adicionam pontos extras, permitindo enriquecer a estimativa de partes adicionais do corpo conforme a configuração escolhida no SlimeVR.</p>
+        <div class="tech-badge-row">
+          <span class="tech-badge">6 trackers — R$ 1.600</span>
+          <span class="tech-badge">8 trackers — R$ 1.800</span>
+          <span class="tech-badge">10 trackers — R$ 2.000</span>
+        </div>
+      </article>
+
+      <div class="tech-grid">
+        <article class="reveal"><small>6 trackers</small><h3>Base completa</h3><p>Configuração pensada para peito, cintura, duas coxas e dois tornozelos.</p></article>
+        <article class="reveal"><small>8 trackers</small><h3>Mais dois pontos</h3><p>Adiciona dois trackers que podem ser configurados em posições extras compatíveis com seu setup.</p></article>
+        <article class="reveal"><small>10 trackers</small><h3>Maior cobertura</h3><p>Oferece o maior número de pontos da linha para um rastreamento corporal mais detalhado.</p></article>
+        <article class="reveal"><small>importante</small><h3>Mais não é obrigatório</h3><p>O kit de 6 já oferece a estrutura principal. Os extras são para quem busca ampliar a configuração.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="instalacao">
+    <div class="section-heading center reveal">
+      <span class="kicker">preparação inicial</span>
+      <h2>Como colocar o sistema para funcionar</h2>
+      <p>O processo envolve conectar o receptor, reconhecer os trackers, definir cada posição e fazer a calibração antes de entrar no VR.</p>
+    </div>
+
+    <div class="explain-layout">
+      <article class="steps-card reveal">
+        <span class="kicker">no computador</span>
+        <h2>Configuração básica</h2>
+        <div class="signal-flow">
+          <div class="signal-node" data-step="1"><strong>Instale e abra o SlimeVR Server</strong><span>É nele que os trackers serão organizados e calibrados.</span></div>
+          <div class="signal-node" data-step="2"><strong>Conecte o dongle ao PC</strong><span>O receptor cria a ponte entre os trackers e o servidor.</span></div>
+          <div class="signal-node" data-step="3"><strong>Ligue os trackers</strong><span>Confira se cada unidade aparece corretamente no sistema.</span></div>
+          <div class="signal-node" data-step="4"><strong>Defina as posições</strong><span>Associe cada tracker à parte correta do corpo.</span></div>
+          <div class="signal-node" data-step="5"><strong>Faça a calibração</strong><span>Siga a postura indicada pelo software antes da sessão.</span></div>
+        </div>
+      </article>
+
+      <article class="steps-card reveal">
+        <span class="kicker">no corpo</span>
+        <h2>Posições do kit de 6</h2>
+        <p>Essa é a distribuição base prevista para o conjunto de seis trackers.</p>
+        <div class="position-list">
+          <div><strong>Peito</strong><span>1 tracker</span></div>
+          <div><strong>Cintura</strong><span>1 tracker</span></div>
+          <div><strong>Coxas</strong><span>2 trackers</span></div>
+          <div><strong>Tornozelos</strong><span>2 trackers</span></div>
+        </div>
+        <div class="notice">As posições extras dos kits de 8 e 10 dependem da configuração desejada e das opções aceitas pelo software. A página individual de cada produto poderá detalhar a distribuição recomendada.</div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="section-heading center reveal">
+      <span class="kicker">perguntas frequentes</span>
+      <h2>As maiores dúvidas, respondidas.</h2>
+      <p>Clique em uma pergunta para abrir a explicação.</p>
+    </div>
+
+    <div class="faq-list">
+      <article class="faq-card reveal">
+        <button class="faq-question" aria-expanded="false"><strong>O ezbodyvr usa o Wi‑Fi da minha casa?</strong><span class="faq-plus">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Não como meio principal de comunicação dos trackers. Eles enviam os dados para um dongle dedicado conectado ao computador, usando comunicação de 2.4 GHz. Isso separa o rastreamento do tráfego normal da rede Wi‑Fi.</div></div>
+      </article>
+
+      <article class="faq-card reveal">
+        <button class="faq-question" aria-expanded="false"><strong>Preciso de computador para usar?</strong><span class="faq-plus">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">O sistema foi planejado para trabalhar com o dongle conectado ao computador e com o SlimeVR Server. O uso em modos totalmente independentes do PC depende do aplicativo e não deve ser presumido como compatível.</div></div>
+      </article>
+
+      <article class="faq-card reveal">
+        <button class="faq-question" aria-expanded="false"><strong>Ele funciona com VRChat?</strong><span class="faq-plus">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">A proposta é usar o rastreamento por meio do SlimeVR Server em um ambiente PC VR compatível, como o VRChat executado no computador. O headset e a forma de conexão ao PC fazem parte do restante do seu setup de VR.</div></div>
+      </article>
+
+      <article class="faq-card reveal">
+        <button class="faq-question" aria-expanded="false"><strong>Qual é a duração da bateria?</strong><span class="faq-plus">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Cada tracker usa uma bateria LiPo de 100 mAh e foi especificado para até 15 horas de funcionamento contínuo. A duração real pode variar com uso, estado da bateria e condições de operação.</div></div>
+      </article>
+
+      <article class="faq-card reveal">
+        <button class="faq-question" aria-expanded="false"><strong>O que significa sensor de 6 eixos?</strong><span class="faq-plus">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Significa que o LSM6DSV combina três eixos de acelerômetro com três eixos de giroscópio. Juntos, eles fornecem dados sobre aceleração, inclinação e rotação do tracker.</div></div>
+      </article>
+
+      <article class="faq-card reveal">
+        <button class="faq-question" aria-expanded="false"><strong>O tracker possui GPS ou câmera?</strong><span class="faq-plus">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Não. O rastreamento é inercial: ele usa sensores internos de movimento e orientação. O sistema não depende de câmera no tracker e não utiliza GPS para acompanhar seu corpo.</div></div>
+      </article>
+
+      <article class="faq-card reveal">
+        <button class="faq-question" aria-expanded="false"><strong>Por que preciso calibrar?</strong><span class="faq-plus">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">A calibração informa ao sistema como os trackers estão orientados no seu corpo naquele momento. Isso ajuda o software a relacionar corretamente cada sensor com a posição do esqueleto virtual.</div></div>
+      </article>
+
+      <article class="faq-card reveal">
+        <button class="faq-question" aria-expanded="false"><strong>Qual kit é suficiente para começar?</strong><span class="faq-plus">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">O kit com 6 trackers é a base principal da linha e cobre peito, cintura, coxas e tornozelos. Os kits com 8 ou 10 trackers são indicados para quem deseja adicionar pontos extras ao corpo.</div></div>
+      </article>
+
+      <article class="faq-card reveal">
+        <button class="faq-question" aria-expanded="false"><strong>Mais trackers sempre significam melhor rastreamento?</strong><span class="faq-plus">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Eles oferecem mais pontos de informação, mas o resultado também depende da colocação correta, calibração, configuração do esqueleto e uso do software. Um kit de 6 bem configurado já forma uma base completa.</div></div>
+      </article>
+
+      <article class="faq-card reveal">
+        <button class="faq-question" aria-expanded="false"><strong>Os trackers precisam ficar exatamente na mesma posição?</strong><span class="faq-plus">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Eles devem permanecer firmes e associados à parte correta do corpo. Mudanças grandes na orientação ou no encaixe podem exigir nova calibração para manter uma leitura coerente.</div></div>
+      </article>
+
+      <article class="faq-card reveal">
+        <button class="faq-question" aria-expanded="false"><strong>O que está incluído em cada kit?</strong><span class="faq-plus">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">A quantidade de trackers é a indicada no nome do produto. A relação final de dongle, tiras, cabos e demais acessórios deverá ser confirmada na página individual de cada kit antes da abertura das vendas.</div></div>
+      </article>
+
+      <article class="faq-card reveal">
+        <button class="faq-question" aria-expanded="false"><strong>As páginas de compra já estão prontas?</strong><span class="faq-plus">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Ainda não. A página inicial já deixa os cards preparados para apontar para as páginas individuais de 6, 8 e 10 trackers assim que elas forem criadas.</div></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section lower-cta reveal">
+    <div class="cta-card">
+      <div>
+        <span class="kicker">voltar aos produtos</span>
+        <h2>Agora ficou mais fácil escolher.</h2>
+        <p>Veja novamente os três kits e compare a quantidade de trackers e os valores.</p>
+      </div>
+      <a class="primary-button" href="index.html#produtos">Ver os kits</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div><h3>ezbodyvr</h3><p>Full body tracking compacto via dongle 2.4 GHz, criado para aumentar a presença do seu corpo no VR.</p></div>
+      <div><h4>Produtos</h4><a href="index.html#produtos">ezbodyvr 6</a><a href="index.html#produtos">ezbodyvr 8</a><a href="index.html#produtos">ezbodyvr 10</a></div>
+      <div><h4>Ajuda</h4><a href="#entenda">Funcionamento</a><a href="#instalacao">Instalação</a><a href="#faq">Perguntas</a></div>
+      <div><h4>Especificações</h4><p>Sensor LSM6DSV</p><p>Bateria de 100 mAh</p><p>Até 15 horas contínuas</p><p>Conexão por dongle</p></div>
+    </div>
+    <div class="footer-copy">© 2026 ezbodyvr — site oficial em desenvolvimento.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
