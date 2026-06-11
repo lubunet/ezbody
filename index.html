@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ezbodyvr: full body tracking compacto, com sensor LSM6DSV, conexão por dongle 2.4 GHz e até 15 horas de uso contínuo.">
+  <meta name="theme-color" content="#050914">
+  <title>ezbodyvr | Full Body Tracking</title>
+  <link rel="stylesheet" href="styles.css?v=20260611-5">
+</head>
+<body>
+  <div class="intro" aria-hidden="true">
+    <div class="intro-logo">ezbodyvr<span>full body tracking</span></div>
+  </div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <div class="mobile-overlay" data-mobile-overlay></div>
+  <aside class="mobile-menu" data-mobile-menu aria-label="Menu para celular">
+    <div class="mobile-menu-top">
+      <a class="brand" href="index.html">ezbodyvr</a>
+      <button class="mobile-close" data-menu-close aria-label="Fechar menu">×</button>
+    </div>
+    <nav class="mobile-links">
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#tecnologia">Tecnologia</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="duvidas.html">Dúvidas</a>
+    </nav>
+  </aside>
+
+  <header class="site-header">
+    <div class="navbar">
+      <button class="menu-button" data-menu-open aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <a class="brand" href="#inicio">ezbodyvr</a>
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a class="active" href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#tecnologia">Tecnologia</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a class="nav-cta" href="duvidas.html">Dúvidas</a>
+      </nav>
+    </div>
+  </header>
+
+  <a class="support-strip" href="https://discord.gg/DHS3yNymF" target="_blank" rel="noopener noreferrer" aria-label="Entrar no canal oficial do Discord para dúvidas e suporte">
+    <span aria-hidden="true"></span>
+    <p>Para d&uacute;vidas e suporte, entre em contato atrav&eacute;s de nosso canal oficial do Discord</p>
+  </a>
+
+  <main class="hero" id="inicio">
+    <div class="hero-shell">
+      <div class="hero-slider" data-slider>
+        <article class="hero-slide hero-slide-discord active" data-slide>
+          <div class="hero-media hero-character-media" aria-hidden="true">
+            <img src="img1.png" alt="" onload="this.parentElement.classList.add('has-image')" onerror="this.style.display='none'">
+            <span class="media-fallback">adicione <b>img1.png</b></span>
+          </div>
+
+          <div class="hero-copy hero-copy-discord">
+            <div class="slide-signature"><strong>ezbodyvr</strong><span>full body tracking</span></div>
+            <span class="eyebrow">acompanhe nosso lançamento</span>
+            <h1>Seu avatar merece <span class="gradient-text">movimentos de verdade.</span></h1>
+            <p class="hero-description">Entre no nosso Discord para acompanhar novidades, demonstrações, datas de produção e o lançamento oficial dos trackers.</p>
+
+            <div class="discord-join-card">
+              <div class="qr-slot" aria-label="QR Code do Discord">
+                <img src="qrcode.png" alt="QR Code para entrar no Discord do ezbodyvr" onload="this.parentElement.classList.add('has-image')" onerror="this.style.display='none'">
+                <span class="qr-fallback">qrcode.png</span>
+              </div>
+              <div class="discord-join-copy">
+                <small>comunidade oficial</small>
+                <strong>Entre no nosso Discord</strong>
+                <span>Aponte a câmera do celular para o QR Code.</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="hero-slide hero-slide-tracker" data-slide>
+          <div class="hero-copy hero-copy-left">
+            
+            <h1>Pequeno e compacto com <span class="gradient-text">movimentos fluidos e sem atrsasos.</span></h1>
+            <p class="hero-description">Um tracker pequeno com sensor LSM6DSV, conexão por dongle 2.4 GHz e autonomia de no mínimo 15 horas de uso contínuo.</p>
+            <div class="hero-specs" aria-label="Principais características">
+              <span><b>LSM6DSV</b></span>
+              <span><b>2.4 GHz</b> conexão por dongle</span>
+              <span><b>15 a 20 horas</b> de autonomia</span>
+            </div>
+          </div>
+
+          <div class="hero-media hero-tracker-media" aria-hidden="true">
+            <img src="trackin.png" alt="" onload="this.parentElement.classList.add('has-image')" onerror="this.style.display='none'">
+            <span class="media-fallback">adicione <b>trackin.png</b></span>
+          </div>
+        </article>
+
+        <article class="hero-slide hero-slide-brasil" data-slide>
+          <div class="hero-copy hero-copy-left">
+            <span class="eyebrow">uma nova opção no Brasil</span>
+            <h1><span class="title-nowrap">Esqueça o WI-FI.</span><span class="gradient-text">Conexão via dongle para latência zero.</span></h1>
+            <p class="hero-description">Uma revolução compacta, altamente avaliada pela comunidade de tracking e agora adaptada para o público brasileiro que não abre mão de suporte ágil e envio nacional.</p>
+            <a class="hero-store-link" href="#produtos">Conheça nossos produtos <span aria-hidden="true"></span></a>
+          </div>
+
+          <div class="hero-media hero-brasil-media" aria-hidden="true">
+            <img src="img2.png" alt="" onload="this.parentElement.classList.add('has-image')" onerror="this.style.display='none'">
+            <span class="media-fallback">adicione <b>img2.png</b></span>
+          </div>
+        </article>
+
+        <div class="slider-controls" aria-label="Controles dos destaques">
+          <button class="slider-arrow slider-arrow-prev" data-slide-prev aria-label="Destaque anterior">‹</button>
+          <button class="slider-arrow slider-arrow-next" data-slide-next aria-label="Próximo destaque">›</button>
+          <div class="slider-dots">
+            <button class="slider-dot active" data-slide-dot aria-label="Abrir destaque 1"></button>
+            <button class="slider-dot" data-slide-dot aria-label="Abrir destaque 2"></button>
+            <button class="slider-dot" data-slide-dot aria-label="Abrir destaque 3"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <section class="section" id="produtos">
+    <div class="section-heading reveal">
+      <div>
+        <span class="kicker">nossos produtos</span>
+        <h2>Escolha quantos trackers você precisa.</h2>
+      </div>
+      <p>Todos os kits seguem a mesma proposta compacta do ezbodyvr.</p>
+    </div>
+
+    <div class="products-grid">
+      <a class="product-card reveal" href="produto-6.html" aria-label="Abrir produto ezbodyvr com 6 trackers">
+        <div class="product-placeholder"><span>imagem do kit 6</span></div>
+        <div class="product-info">
+          <div class="product-topline"><small>full body tracking</small><span class="product-tag">6 trackers</span></div>
+          <h3>ezbodyvr lite</h3>
+          <p>Configuração essencial para peito, cintura, coxas e tornozelos.</p>
+          <div class="product-price"><strong>R$ 1.600</strong><span>Ver produto</span></div>
+        </div>
+      </a>
+
+      <a class="product-card reveal" href="produto-8.html" aria-label="Abrir produto ezbodyvr com 8 trackers">
+        <div class="product-placeholder"><span>imagem do kit 8</span></div>
+        <div class="product-info">
+          <div class="product-topline"><small>full body tracking</small><span class="product-tag">8 trackers</span></div>
+          <h3>ezbodyvr plus</h3>
+          <p>Mais pontos de articulação para incluir o rastreamento completo dos pés, garantindo uma locomoção natural e precisa.</p>
+          <div class="product-price"><strong>R$ 1.800</strong><span>Ver produto</span></div>
+        </div>
+      </a>
+
+      <a class="product-card reveal" href="produto-10.html" aria-label="Abrir produto ezbodyvr com 10 trackers">
+        <div class="product-placeholder"><span>imagem do kit 10</span></div>
+        <div class="product-info">
+          <div class="product-topline"><small>full body tracking</small><span class="product-tag">10 trackers</span></div>
+          <h3>ezbodyvr pro</h3>
+          <p>Sincronia corporal absoluta. O nível máximo de sensores da linha, capturando a articulação dos cotovelos para poses perfeitas e gestos sem limitações</p>
+          <div class="product-price"><strong>R$ 2.000</strong><span>Ver produto</span></div>
+        </div>
+      </a>
+    </div>
+
+    <div class="trust-strip reveal">
+      <article class="trust-item"><div class="trust-icon">15h</div><h3>Uso contínuo</h3><p>Autonomia informada de até 15 horas com bateria compacta de 100 mAh.</p></article>
+      <article class="trust-item"><div class="trust-icon">2.4</div><h3>Dongle dedicado</h3><p>Os trackers enviam os dados ao receptor conectado ao computador.</p></article>
+      <article class="trust-item"><div class="trust-icon">6D</div><h3>Sensor LSM6DSV</h3><p>IMU de 6 eixos com acelerômetro e giroscópio digitais.</p></article>
+      <article class="trust-item"><div class="trust-icon">USB</div><h3>Recarga prática</h3><p>Estrutura compacta com acesso à recarga e ao controle físico do tracker.</p></article>
+    </div>
+  </section>
+
+  <section class="tech-section" id="tecnologia">
+    <div class="tech-layout">
+      <article class="tech-intro reveal">
+        <span class="kicker">por dentro do ezbodyvr</span>
+        <h2>Pequeno no corpo. Completo no movimento.</h2>
+        <p>O tracker combina uma placa nRF52840, o sensor inercial LSM6DSV e uma bateria LiPo de 100 mAh em uma montagem empilhada. Essa arquitetura ajuda a reduzir o tamanho do dispositivo sem abrir mão de uma comunicação dedicada com o computador.</p>
+        <div class="tech-badge-row">
+          <span class="tech-badge">nRF52840</span>
+          <span class="tech-badge">LSM6DSV</span>
+          <span class="tech-badge">bateria 100 mAh</span>
+          <span class="tech-badge">dongle 2.4 GHz</span>
+        </div>
+      </article>
+
+      <div class="tech-grid">
+        <article class="reveal"><small>sensor</small><h3>Movimento em 6 eixos</h3><p>O acelerômetro mede aceleração e inclinação, enquanto o giroscópio acompanha rotações e velocidade angular.</p></article>
+        <article class="reveal"><small>comunicação</small><h3>Sem depender do Wi‑Fi</h3><p>Os trackers conversam com um receptor próprio, deixando a comunicação separada da rede Wi‑Fi da casa.</p></article>
+        <article class="reveal"><small>estrutura</small><h3>Montagem compacta</h3><p>Os componentes são organizados verticalmente para ocupar menos espaço e atrapalhar menos durante o uso.</p></article>
+        <article class="reveal"><small>energia</small><h3>15 horas contínuas</h3><p>A bateria de 100 mAh foi escolhida para equilibrar tamanho reduzido e uma sessão longa de uso.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="como-funciona">
+    <div class="section-heading center reveal">
+      <span class="kicker">simples de entender</span>
+      <h2>Do seu corpo para o avatar em três etapas.</h2>
+      <p>O sistema lê o movimento nos trackers, envia os dados pelo dongle e entrega essas informações ao software de rastreamento no computador.</p>
+    </div>
+
+    <div class="steps">
+      <article class="step-card reveal"><div class="step-number">01</div><h3>Vista os trackers</h3><p>Prenda cada unidade na posição configurada do corpo e ligue os dispositivos.</p></article>
+      <article class="step-card reveal"><div class="step-number">02</div><h3>Conecte o dongle</h3><p>O receptor no PC recebe os dados dos trackers usando a comunicação dedicada de 2.4 GHz.</p></article>
+      <article class="step-card reveal"><div class="step-number">03</div><h3>Calibre e entre no VR</h3><p>Com o SlimeVR Server configurado, faça a calibração e use o rastreamento no seu ambiente PC VR compatível.</p></article>
+    </div>
+  </section>
+
+  <section class="section lower-cta reveal">
+    <div class="cta-card">
+      <div>
+        <span class="kicker">ainda ficou alguma dúvida?</span>
+        <h2>Veja a explicação completa antes de escolher o seu kit.</h2>
+        <p>Preparamos uma página com funcionamento, posições, bateria, sensor, conexão, calibração e respostas para as dúvidas mais comuns.</p>
+      </div>
+      <a class="primary-button" href="duvidas.html">Abrir central de dúvidas</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div><h3>ezbodyvr</h3><p>Full body tracking compacto via dongle 2.4 GHz, criado para aumentar a presença do seu corpo no VR.</p></div>
+      <div><h4>Navegação</h4><a href="#inicio">Início</a><a href="#produtos">Produtos</a><a href="#tecnologia">Tecnologia</a></div>
+      <div><h4>Ajuda</h4><a href="duvidas.html">Dúvidas</a><a href="duvidas.html#instalacao">Instalação</a><a href="duvidas.html#kits">Escolher kit</a></div>
+      <div><h4>Especificações</h4><p>Sensor LSM6DSV</p><p>Bateria de 100 mAh</p><p>Até 15 horas contínuas</p><p>Conexão por dongle</p></div>
+    </div>
+    <div class="footer-copy">© 2026 ezbodyvr — site oficial em desenvolvimento.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
